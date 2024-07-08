@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "summercamp_frenches",
+  "info": {
+    "singularName": "summercamp-french",
+    "pluralName": "summercamp-frenches",
+    "displayName": "summercamp-french"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "headerTitle": {
+      "type": "string"
+    },
+    "headerAge": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "success_frenches",
+  "info": {
+    "singularName": "success-french",
+    "pluralName": "success-frenches",
+    "displayName": "success-french"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "successMessageHeader": {
+      "type": "text"
+    },
+    "successMessageText": {
+      "type": "text"
+    }
+  }
+}

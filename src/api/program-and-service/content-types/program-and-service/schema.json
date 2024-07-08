@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "program_and_services",
+  "info": {
+    "singularName": "program-and-service",
+    "pluralName": "program-and-services",
+    "displayName": "program and service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageTitle": {
+      "type": "string"
+    },
+    "CardInfo": {
+      "displayName": "CardInfo",
+      "type": "component",
+      "repeatable": true,
+      "component": "card-info.card-info"
+    }
+  }
+}

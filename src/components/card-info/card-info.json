@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_card_info_card_infos",
+  "info": {
+    "displayName": "CardInfo",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

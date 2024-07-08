@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "header_frenches",
+  "info": {
+    "singularName": "header-french",
+    "pluralName": "header-frenches",
+    "displayName": "header-french"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "headerLink1": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "childregistration_frenches",
+  "info": {
+    "singularName": "childregistration-french",
+    "pluralName": "childregistration-frenches",
+    "displayName": "childregistration-french"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "formTitle": {
+      "type": "string"
+    },
+    "formDescription": {
+      "type": "text"
+    }
+  }
+}

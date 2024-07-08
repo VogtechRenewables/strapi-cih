@@ -850,6 +850,70 @@ export interface ApiAboutFrenchAboutFrench extends Schema.SingleType {
   };
 }
 
+export interface ApiChildregistrationChildregistration
+  extends Schema.SingleType {
+  collectionName: 'childregistrations';
+  info: {
+    singularName: 'childregistration';
+    pluralName: 'childregistrations';
+    displayName: 'childregistration';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    formTitle: Attribute.String;
+    formDescription: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::childregistration.childregistration',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::childregistration.childregistration',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiChildregistrationFrenchChildregistrationFrench
+  extends Schema.SingleType {
+  collectionName: 'childregistration_frenches';
+  info: {
+    singularName: 'childregistration-french';
+    pluralName: 'childregistration-frenches';
+    displayName: 'childregistration-french';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    formTitle: Attribute.String;
+    formDescription: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::childregistration-french.childregistration-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::childregistration-french.childregistration-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiContactContact extends Schema.SingleType {
   collectionName: 'contacts';
   info: {
@@ -920,6 +984,96 @@ export interface ApiContactFrenchContactFrench extends Schema.SingleType {
   };
 }
 
+export interface ApiFooterFooter extends Schema.SingleType {
+  collectionName: 'footers';
+  info: {
+    singularName: 'footer';
+    pluralName: 'footers';
+    displayName: 'footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    footerTitle: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::footer.footer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::footer.footer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiHeaderHeader extends Schema.SingleType {
+  collectionName: 'headers';
+  info: {
+    singularName: 'header';
+    pluralName: 'headers';
+    displayName: 'header';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    headerLink1: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::header.header',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::header.header',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiHeaderFrenchHeaderFrench extends Schema.SingleType {
+  collectionName: 'header_frenches';
+  info: {
+    singularName: 'header-french';
+    pluralName: 'header-frenches';
+    displayName: 'header-french';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    headerLink1: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::header-french.header-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::header-french.header-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiHomeHome extends Schema.SingleType {
   collectionName: 'homes';
   info: {
@@ -974,6 +1128,135 @@ export interface ApiHomeFrenchHomeFrench extends Schema.SingleType {
   };
 }
 
+export interface ApiPageNotFoundPageNotFound extends Schema.SingleType {
+  collectionName: 'page_not_founds';
+  info: {
+    singularName: 'page-not-found';
+    pluralName: 'page-not-founds';
+    displayName: 'page not found';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    error: Attribute.Text;
+    textOne: Attribute.Text;
+    textTwo: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::page-not-found.page-not-found',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::page-not-found.page-not-found',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPageNotFoundFrenchPageNotFoundFrench
+  extends Schema.SingleType {
+  collectionName: 'page_not_found_frenches';
+  info: {
+    singularName: 'page-not-found-french';
+    pluralName: 'page-not-found-frenches';
+    displayName: 'page not found-french';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    error: Attribute.Text;
+    textOne: Attribute.Text;
+    textTwo: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::page-not-found-french.page-not-found-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::page-not-found-french.page-not-found-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiProgramAndServiceProgramAndService
+  extends Schema.SingleType {
+  collectionName: 'program_and_services';
+  info: {
+    singularName: 'program-and-service';
+    pluralName: 'program-and-services';
+    displayName: 'program and service';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    pageTitle: Attribute.String;
+    CardInfo: Attribute.Component<'card-info.card-info', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::program-and-service.program-and-service',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::program-and-service.program-and-service',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiProgramAndServiceFrenchProgramAndServiceFrench
+  extends Schema.SingleType {
+  collectionName: 'program_and_service_frenches';
+  info: {
+    singularName: 'program-and-service-french';
+    pluralName: 'program-and-service-frenches';
+    displayName: 'program and service-french';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    pageTitle: Attribute.String;
+    CardInfo: Attribute.Component<'card-info.card-info', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::program-and-service-french.program-and-service-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::program-and-service-french.program-and-service-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiResourceResource extends Schema.SingleType {
   collectionName: 'resources';
   info: {
@@ -1004,6 +1287,160 @@ export interface ApiResourceResource extends Schema.SingleType {
   };
 }
 
+export interface ApiResourceFrenchResourceFrench extends Schema.SingleType {
+  collectionName: 'resource_frenches';
+  info: {
+    singularName: 'resource-french';
+    pluralName: 'resource-frenches';
+    displayName: 'resource-french';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    formTitle: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::resource-french.resource-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::resource-french.resource-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSuccessSuccess extends Schema.SingleType {
+  collectionName: 'successes';
+  info: {
+    singularName: 'success';
+    pluralName: 'successes';
+    displayName: 'success';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    successMessageHeader: Attribute.Text;
+    successMessageText: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::success.success',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::success.success',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSuccessFrenchSuccessFrench extends Schema.SingleType {
+  collectionName: 'success_frenches';
+  info: {
+    singularName: 'success-french';
+    pluralName: 'success-frenches';
+    displayName: 'success-french';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    successMessageHeader: Attribute.Text;
+    successMessageText: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::success-french.success-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::success-french.success-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSummercampSummercamp extends Schema.SingleType {
+  collectionName: 'summercamps';
+  info: {
+    singularName: 'summercamp';
+    pluralName: 'summercamps';
+    displayName: 'summercamp';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    headerTitle: Attribute.String;
+    headerAge: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::summercamp.summercamp',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::summercamp.summercamp',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSummercampFrenchSummercampFrench extends Schema.SingleType {
+  collectionName: 'summercamp_frenches';
+  info: {
+    singularName: 'summercamp-french';
+    pluralName: 'summercamp-frenches';
+    displayName: 'summercamp-french';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    headerTitle: Attribute.String;
+    headerAge: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::summercamp-french.summercamp-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::summercamp-french.summercamp-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1024,11 +1461,25 @@ declare module '@strapi/types' {
       'plugin::i18n.locale': PluginI18NLocale;
       'api::about.about': ApiAboutAbout;
       'api::about-french.about-french': ApiAboutFrenchAboutFrench;
+      'api::childregistration.childregistration': ApiChildregistrationChildregistration;
+      'api::childregistration-french.childregistration-french': ApiChildregistrationFrenchChildregistrationFrench;
       'api::contact.contact': ApiContactContact;
       'api::contact-french.contact-french': ApiContactFrenchContactFrench;
+      'api::footer.footer': ApiFooterFooter;
+      'api::header.header': ApiHeaderHeader;
+      'api::header-french.header-french': ApiHeaderFrenchHeaderFrench;
       'api::home.home': ApiHomeHome;
       'api::home-french.home-french': ApiHomeFrenchHomeFrench;
+      'api::page-not-found.page-not-found': ApiPageNotFoundPageNotFound;
+      'api::page-not-found-french.page-not-found-french': ApiPageNotFoundFrenchPageNotFoundFrench;
+      'api::program-and-service.program-and-service': ApiProgramAndServiceProgramAndService;
+      'api::program-and-service-french.program-and-service-french': ApiProgramAndServiceFrenchProgramAndServiceFrench;
       'api::resource.resource': ApiResourceResource;
+      'api::resource-french.resource-french': ApiResourceFrenchResourceFrench;
+      'api::success.success': ApiSuccessSuccess;
+      'api::success-french.success-french': ApiSuccessFrenchSuccessFrench;
+      'api::summercamp.summercamp': ApiSummercampSummercamp;
+      'api::summercamp-french.summercamp-french': ApiSummercampFrenchSummercampFrench;
     }
   }
 }

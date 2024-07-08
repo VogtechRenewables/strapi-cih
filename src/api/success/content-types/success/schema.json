@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "successes",
+  "info": {
+    "singularName": "success",
+    "pluralName": "successes",
+    "displayName": "success"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "successMessageHeader": {
+      "type": "text"
+    },
+    "successMessageText": {
+      "type": "text"
+    }
+  }
+}

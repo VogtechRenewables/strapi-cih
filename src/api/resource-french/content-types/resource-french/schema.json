@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "resource_frenches",
+  "info": {
+    "singularName": "resource-french",
+    "pluralName": "resource-frenches",
+    "displayName": "resource-french"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "formTitle": {
+      "type": "string"
+    }
+  }
+}

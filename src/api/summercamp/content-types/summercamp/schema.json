@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "summercamps",
+  "info": {
+    "singularName": "summercamp",
+    "pluralName": "summercamps",
+    "displayName": "summercamp"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "headerTitle": {
+      "type": "string"
+    },
+    "headerAge": {
+      "type": "string"
+    }
+  }
+}

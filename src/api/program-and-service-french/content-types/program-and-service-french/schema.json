@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "program_and_service_frenches",
+  "info": {
+    "singularName": "program-and-service-french",
+    "pluralName": "program-and-service-frenches",
+    "displayName": "program and service-french"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageTitle": {
+      "type": "string"
+    },
+    "CardInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "card-info.card-info"
+    }
+  }
+}
