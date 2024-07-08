@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_frenches",
+  "info": {
+    "singularName": "contact-french",
+    "pluralName": "contact-frenches",
+    "displayName": "contact-french"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "formTitle": {
+      "type": "string"
+    },
+    "namePlaceholder": {
+      "type": "string"
+    },
+    "emailPlaceholder": {
+      "type": "string"
+    },
+    "phonePlaceholder": {
+      "type": "string"
+    },
+    "messagePlaceholder": {
+      "type": "string"
+    },
+    "submitButton": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_frenches",
+  "info": {
+    "singularName": "home-french",
+    "pluralName": "home-frenches",
+    "displayName": "home-french"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSmall": {
+      "type": "string"
+    },
+    "heroBig": {
+      "type": "text"
+    }
+  }
+}
