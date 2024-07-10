@@ -25,11 +25,24 @@ export interface ResourceGroupResourceGroup extends Schema.Component {
   };
 }
 
+export interface SessionsSessions extends Schema.Component {
+  collectionName: 'components_sessions_sessions';
+  info: {
+    displayName: 'Sessions';
+    icon: 'pinMap';
+  };
+  attributes: {
+    weekstart: Attribute.String;
+    weekend: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'card-info.card-info': CardInfoCardInfo;
       'resource-group.resource-group': ResourceGroupResourceGroup;
+      'sessions.sessions': SessionsSessions;
     }
   }
 }

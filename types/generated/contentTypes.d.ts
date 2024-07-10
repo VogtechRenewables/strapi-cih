@@ -1461,6 +1461,10 @@ export interface ApiResourceFrenchResourceFrench extends Schema.SingleType {
   attributes: {
     formTitle: Attribute.String;
     ResourceInfo: Attribute.Component<'resource-group.resource-group', true>;
+    group1: Attribute.String;
+    group2: Attribute.String;
+    group3: Attribute.String;
+    group4: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1472,6 +1476,36 @@ export interface ApiResourceFrenchResourceFrench extends Schema.SingleType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::resource-french.resource-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSignInSignIn extends Schema.SingleType {
+  collectionName: 'sign_ins';
+  info: {
+    singularName: 'sign-in';
+    pluralName: 'sign-ins';
+    displayName: 'sign-in';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    formTitle: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::sign-in.sign-in',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::sign-in.sign-in',
       'oneToOne',
       'admin::user'
     > &
@@ -1555,6 +1589,7 @@ export interface ApiSummercampSummercamp extends Schema.SingleType {
     singularName: 'summercamp';
     pluralName: 'summercamps';
     displayName: 'summercamp';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1562,6 +1597,23 @@ export interface ApiSummercampSummercamp extends Schema.SingleType {
   attributes: {
     headerTitle: Attribute.String;
     headerAge: Attribute.String;
+    headerTitle2: Attribute.String;
+    headerSubTitle: Attribute.String;
+    registrationHeader: Attribute.String;
+    registrationHeaderDate: Attribute.String;
+    registerButton1: Attribute.String;
+    dateAndTimesTitle: Attribute.String;
+    Sessions: Attribute.Component<'sessions.sessions', true>;
+    paragraphTitle1: Attribute.Text;
+    paragraphText1: Attribute.Text;
+    paragraphTitle2: Attribute.Text;
+    paragraphText2: Attribute.Text;
+    paragraphTitle3: Attribute.Text;
+    paragraphText3: Attribute.Text;
+    paragraphTitle4: Attribute.Text;
+    paragraphText4: Attribute.Text;
+    buttonTitle: Attribute.String;
+    registerButton2: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1647,6 +1699,7 @@ declare module '@strapi/types' {
       'api::program-and-service-french.program-and-service-french': ApiProgramAndServiceFrenchProgramAndServiceFrench;
       'api::resource.resource': ApiResourceResource;
       'api::resource-french.resource-french': ApiResourceFrenchResourceFrench;
+      'api::sign-in.sign-in': ApiSignInSignIn;
       'api::success.success': ApiSuccessSuccess;
       'api::success-french.success-french': ApiSuccessFrenchSuccessFrench;
       'api::summercamp.summercamp': ApiSummercampSummercamp;

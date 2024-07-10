@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sessions_sessions",
+  "info": {
+    "displayName": "Sessions",
+    "icon": "pinMap"
+  },
+  "options": {},
+  "attributes": {
+    "weekstart": {
+      "type": "string"
+    },
+    "weekend": {
+      "type": "string"
+    }
+  }
+}

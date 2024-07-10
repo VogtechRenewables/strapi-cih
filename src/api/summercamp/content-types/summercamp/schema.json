@@ -4,7 +4,8 @@
   "info": {
     "singularName": "summercamp",
     "pluralName": "summercamps",
-    "displayName": "summercamp"
+    "displayName": "summercamp",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,60 @@
       "type": "string"
     },
     "headerAge": {
+      "type": "string"
+    },
+    "headerTitle2": {
+      "type": "string"
+    },
+    "headerSubTitle": {
+      "type": "string"
+    },
+    "registrationHeader": {
+      "type": "string"
+    },
+    "registrationHeaderDate": {
+      "type": "string"
+    },
+    "registerButton1": {
+      "type": "string"
+    },
+    "dateAndTimesTitle": {
+      "type": "string"
+    },
+    "Sessions": {
+      "displayName": "Sessions",
+      "type": "component",
+      "repeatable": true,
+      "component": "sessions.sessions"
+    },
+    "paragraphTitle1": {
+      "type": "text"
+    },
+    "paragraphText1": {
+      "type": "text"
+    },
+    "paragraphTitle2": {
+      "type": "text"
+    },
+    "paragraphText2": {
+      "type": "text"
+    },
+    "paragraphTitle3": {
+      "type": "text"
+    },
+    "paragraphText3": {
+      "type": "text"
+    },
+    "paragraphTitle4": {
+      "type": "text"
+    },
+    "paragraphText4": {
+      "type": "text"
+    },
+    "buttonTitle": {
+      "type": "string"
+    },
+    "registerButton2": {
       "type": "string"
     }
   }

@@ -19,6 +19,18 @@
       "type": "component",
       "repeatable": true,
       "component": "resource-group.resource-group"
+    },
+    "group1": {
+      "type": "string"
+    },
+    "group2": {
+      "type": "string"
+    },
+    "group3": {
+      "type": "string"
+    },
+    "group4": {
+      "type": "string"
     }
   }
 }

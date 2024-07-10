@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "sign_ins",
+  "info": {
+    "singularName": "sign-in",
+    "pluralName": "sign-ins",
+    "displayName": "sign-in"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "formTitle": {
+      "type": "string"
+    }
+  }
+}
