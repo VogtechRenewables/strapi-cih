@@ -4,7 +4,8 @@
   "info": {
     "singularName": "header-french",
     "pluralName": "header-frenches",
-    "displayName": "header-french"
+    "displayName": "header-french",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,27 @@
   "attributes": {
     "headerLink1": {
       "type": "text"
+    },
+    "headerLink2": {
+      "type": "string"
+    },
+    "headerLink3": {
+      "type": "string"
+    },
+    "headerLink4": {
+      "type": "string"
+    },
+    "headerLink5": {
+      "type": "string"
+    },
+    "headerLink6": {
+      "type": "string"
+    },
+    "signIn": {
+      "type": "string"
+    },
+    "logOut": {
+      "type": "string"
     }
   }
 }

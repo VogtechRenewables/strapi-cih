@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home-french",
     "pluralName": "home-frenches",
-    "displayName": "home-french"
+    "displayName": "home-french",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,39 @@
     },
     "heroBig": {
       "type": "text"
+    },
+    "learnMoreButton": {
+      "type": "string"
+    },
+    "resourceBlockTitle1": {
+      "type": "string"
+    },
+    "resourceBlockDesc1": {
+      "type": "text"
+    },
+    "resourceBlockTitle2": {
+      "type": "string"
+    },
+    "resourceBlockDesc2": {
+      "type": "text"
+    },
+    "resourceBlockTitle3": {
+      "type": "string"
+    },
+    "resourceBlockDesc3": {
+      "type": "text"
+    },
+    "resourceBlockTitle4": {
+      "type": "string"
+    },
+    "resourceBlockDesc4": {
+      "type": "text"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "register": {
+      "type": "string"
     }
   }
 }

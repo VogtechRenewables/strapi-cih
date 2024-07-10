@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_frenches",
+  "info": {
+    "singularName": "footer-french",
+    "pluralName": "footer-frenches",
+    "displayName": "footer-french"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "formTitle": {
+      "type": "string"
+    }
+  }
+}

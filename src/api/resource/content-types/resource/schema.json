@@ -4,7 +4,8 @@
   "info": {
     "singularName": "resource",
     "pluralName": "resources",
-    "displayName": "resource"
+    "displayName": "resource",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,11 @@
   "attributes": {
     "formTitle": {
       "type": "string"
+    },
+    "ResourceInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "resource-group.resource-group"
     }
   }
 }

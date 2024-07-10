@@ -4,7 +4,8 @@
   "info": {
     "singularName": "success",
     "pluralName": "successes",
-    "displayName": "success"
+    "displayName": "success",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,15 @@
       "type": "text"
     },
     "successMessageText": {
+      "type": "text"
+    },
+    "successMessageText2": {
+      "type": "text"
+    },
+    "greenBoxTitle": {
+      "type": "string"
+    },
+    "greenBoxContent": {
       "type": "text"
     }
   }

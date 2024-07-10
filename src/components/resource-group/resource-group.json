@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_resource_group_resource_groups",
+  "info": {
+    "displayName": "ResourceGroup",
+    "icon": "cloud",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "resourceLink": {
+      "type": "text"
+    },
+    "resourceName": {
+      "type": "text"
+    }
+  }
+}

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "footer",
     "pluralName": "footers",
-    "displayName": "footer"
+    "displayName": "footer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,6 +13,90 @@
   "pluginOptions": {},
   "attributes": {
     "footerTitle": {
+      "type": "string"
+    },
+    "footerDescription": {
+      "type": "text"
+    },
+    "navigation1": {
+      "type": "string"
+    },
+    "navigation2": {
+      "type": "string"
+    },
+    "navigation3": {
+      "type": "string"
+    },
+    "navigation4": {
+      "type": "string"
+    },
+    "navigation5": {
+      "type": "string"
+    },
+    "aboutUs1": {
+      "type": "string"
+    },
+    "aboutUs2": {
+      "type": "string"
+    },
+    "aboutUs3": {
+      "type": "string"
+    },
+    "aboutUs4": {
+      "type": "string"
+    },
+    "aboutUs5": {
+      "type": "string"
+    },
+    "programs1": {
+      "type": "string"
+    },
+    "programs2": {
+      "type": "string"
+    },
+    "programs3": {
+      "type": "string"
+    },
+    "programs4": {
+      "type": "string"
+    },
+    "resources1": {
+      "type": "string"
+    },
+    "resources2": {
+      "type": "string"
+    },
+    "resources3": {
+      "type": "string"
+    },
+    "resources4": {
+      "type": "string"
+    },
+    "resources5": {
+      "type": "string"
+    },
+    "contact1": {
+      "type": "string"
+    },
+    "email": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "text"
+    },
+    "navigation": {
+      "type": "string"
+    },
+    "aboutUs": {
+      "type": "string"
+    },
+    "programs": {
+      "type": "string"
+    },
+    "resources": {
+      "type": "string"
+    },
+    "contact": {
       "type": "string"
     }
   }

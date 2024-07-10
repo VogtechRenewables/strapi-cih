@@ -794,6 +794,7 @@ export interface ApiAboutAbout extends Schema.SingleType {
     singularName: 'about';
     pluralName: 'abouts';
     displayName: 'about';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -801,6 +802,17 @@ export interface ApiAboutAbout extends Schema.SingleType {
   attributes: {
     aboutUsTitle: Attribute.String;
     aboutUsContent: Attribute.Text;
+    missionTitle: Attribute.String;
+    missionContent: Attribute.Text;
+    diversityTitle: Attribute.String;
+    diversityContent: Attribute.Text;
+    visionTitle: Attribute.String;
+    visionContent: Attribute.Text;
+    valuesTitle: Attribute.String;
+    valuesContent: Attribute.Text;
+    additionalTitle: Attribute.String;
+    additionalContent: Attribute.Text;
+    button: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -825,6 +837,7 @@ export interface ApiAboutFrenchAboutFrench extends Schema.SingleType {
     singularName: 'about-french';
     pluralName: 'about-frenches';
     displayName: 'about-french';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -832,6 +845,17 @@ export interface ApiAboutFrenchAboutFrench extends Schema.SingleType {
   attributes: {
     aboutUsTitle: Attribute.String;
     aboutUsContent: Attribute.Text;
+    missionTitle: Attribute.String;
+    missionContent: Attribute.Text;
+    diversityTitle: Attribute.String;
+    diversityContent: Attribute.Text;
+    visionTitle: Attribute.String;
+    visionContent: Attribute.Text;
+    valuesTitle: Attribute.String;
+    valuesContent: Attribute.Text;
+    additionalTitle: Attribute.String;
+    additionalContent: Attribute.Text;
+    back: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -990,12 +1014,41 @@ export interface ApiFooterFooter extends Schema.SingleType {
     singularName: 'footer';
     pluralName: 'footers';
     displayName: 'footer';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     footerTitle: Attribute.String;
+    footerDescription: Attribute.Text;
+    navigation1: Attribute.String;
+    navigation2: Attribute.String;
+    navigation3: Attribute.String;
+    navigation4: Attribute.String;
+    navigation5: Attribute.String;
+    aboutUs1: Attribute.String;
+    aboutUs2: Attribute.String;
+    aboutUs3: Attribute.String;
+    aboutUs4: Attribute.String;
+    aboutUs5: Attribute.String;
+    programs1: Attribute.String;
+    programs2: Attribute.String;
+    programs3: Attribute.String;
+    programs4: Attribute.String;
+    resources1: Attribute.String;
+    resources2: Attribute.String;
+    resources3: Attribute.String;
+    resources4: Attribute.String;
+    resources5: Attribute.String;
+    contact1: Attribute.String;
+    email: Attribute.Text;
+    phone: Attribute.Text;
+    navigation: Attribute.String;
+    aboutUs: Attribute.String;
+    programs: Attribute.String;
+    resources: Attribute.String;
+    contact: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1014,18 +1067,56 @@ export interface ApiFooterFooter extends Schema.SingleType {
   };
 }
 
+export interface ApiFooterFrenchFooterFrench extends Schema.SingleType {
+  collectionName: 'footer_frenches';
+  info: {
+    singularName: 'footer-french';
+    pluralName: 'footer-frenches';
+    displayName: 'footer-french';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    formTitle: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::footer-french.footer-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::footer-french.footer-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiHeaderHeader extends Schema.SingleType {
   collectionName: 'headers';
   info: {
     singularName: 'header';
     pluralName: 'headers';
     displayName: 'header';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     headerLink1: Attribute.Text;
+    headerLink2: Attribute.String;
+    headerLink3: Attribute.String;
+    headerLink4: Attribute.String;
+    headerLink5: Attribute.String;
+    headerLink6: Attribute.String;
+    signIn: Attribute.String;
+    logOut: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1050,12 +1141,20 @@ export interface ApiHeaderFrenchHeaderFrench extends Schema.SingleType {
     singularName: 'header-french';
     pluralName: 'header-frenches';
     displayName: 'header-french';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     headerLink1: Attribute.Text;
+    headerLink2: Attribute.String;
+    headerLink3: Attribute.String;
+    headerLink4: Attribute.String;
+    headerLink5: Attribute.String;
+    headerLink6: Attribute.String;
+    signIn: Attribute.String;
+    logOut: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1080,6 +1179,7 @@ export interface ApiHomeHome extends Schema.SingleType {
     singularName: 'home';
     pluralName: 'homes';
     displayName: 'home';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1087,6 +1187,19 @@ export interface ApiHomeHome extends Schema.SingleType {
   attributes: {
     heroSmall: Attribute.String;
     heroBig: Attribute.Text;
+    learnMoreButton: Attribute.String;
+    resourcesSectionTitle: Attribute.String;
+    resourcesSectionDesc: Attribute.Text;
+    resourceBlockTitle1: Attribute.String;
+    resourceBlockDesc1: Attribute.Text;
+    resourceBlockTitle2: Attribute.String;
+    resourceBlockDesc2: Attribute.Text;
+    resourceBlockTitle3: Attribute.String;
+    resourceBlockDesc3: Attribute.Text;
+    resourceBlockTitle4: Attribute.String;
+    resourceBlockDesc4: Attribute.Text;
+    contact: Attribute.String;
+    register: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1103,6 +1216,7 @@ export interface ApiHomeFrenchHomeFrench extends Schema.SingleType {
     singularName: 'home-french';
     pluralName: 'home-frenches';
     displayName: 'home-french';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1110,6 +1224,17 @@ export interface ApiHomeFrenchHomeFrench extends Schema.SingleType {
   attributes: {
     heroSmall: Attribute.String;
     heroBig: Attribute.Text;
+    learnMoreButton: Attribute.String;
+    resourceBlockTitle1: Attribute.String;
+    resourceBlockDesc1: Attribute.Text;
+    resourceBlockTitle2: Attribute.String;
+    resourceBlockDesc2: Attribute.Text;
+    resourceBlockTitle3: Attribute.String;
+    resourceBlockDesc3: Attribute.Text;
+    resourceBlockTitle4: Attribute.String;
+    resourceBlockDesc4: Attribute.Text;
+    contact: Attribute.String;
+    register: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1263,12 +1388,14 @@ export interface ApiResourceResource extends Schema.SingleType {
     singularName: 'resource';
     pluralName: 'resources';
     displayName: 'resource';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     formTitle: Attribute.String;
+    ResourceInfo: Attribute.Component<'resource-group.resource-group', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1293,12 +1420,14 @@ export interface ApiResourceFrenchResourceFrench extends Schema.SingleType {
     singularName: 'resource-french';
     pluralName: 'resource-frenches';
     displayName: 'resource-french';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     formTitle: Attribute.String;
+    ResourceInfo: Attribute.Component<'resource-group.resource-group', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1323,6 +1452,7 @@ export interface ApiSuccessSuccess extends Schema.SingleType {
     singularName: 'success';
     pluralName: 'successes';
     displayName: 'success';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1330,6 +1460,9 @@ export interface ApiSuccessSuccess extends Schema.SingleType {
   attributes: {
     successMessageHeader: Attribute.Text;
     successMessageText: Attribute.Text;
+    successMessageText2: Attribute.Text;
+    greenBoxTitle: Attribute.String;
+    greenBoxContent: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1354,6 +1487,7 @@ export interface ApiSuccessFrenchSuccessFrench extends Schema.SingleType {
     singularName: 'success-french';
     pluralName: 'success-frenches';
     displayName: 'success-french';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1361,6 +1495,9 @@ export interface ApiSuccessFrenchSuccessFrench extends Schema.SingleType {
   attributes: {
     successMessageHeader: Attribute.Text;
     successMessageText: Attribute.Text;
+    successMessageText2: Attribute.Text;
+    greenBoxTitle: Attribute.String;
+    greenBoxContent: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1466,6 +1603,7 @@ declare module '@strapi/types' {
       'api::contact.contact': ApiContactContact;
       'api::contact-french.contact-french': ApiContactFrenchContactFrench;
       'api::footer.footer': ApiFooterFooter;
+      'api::footer-french.footer-french': ApiFooterFrenchFooterFrench;
       'api::header.header': ApiHeaderHeader;
       'api::header-french.header-french': ApiHeaderFrenchHeaderFrench;
       'api::home.home': ApiHomeHome;

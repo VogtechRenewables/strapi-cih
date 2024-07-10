@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about-french",
     "pluralName": "about-frenches",
-    "displayName": "about-french"
+    "displayName": "about-french",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,39 @@
     },
     "aboutUsContent": {
       "type": "text"
+    },
+    "missionTitle": {
+      "type": "string"
+    },
+    "missionContent": {
+      "type": "text"
+    },
+    "diversityTitle": {
+      "type": "string"
+    },
+    "diversityContent": {
+      "type": "text"
+    },
+    "visionTitle": {
+      "type": "string"
+    },
+    "visionContent": {
+      "type": "text"
+    },
+    "valuesTitle": {
+      "type": "string"
+    },
+    "valuesContent": {
+      "type": "text"
+    },
+    "additionalTitle": {
+      "type": "string"
+    },
+    "additionalContent": {
+      "type": "text"
+    },
+    "back": {
+      "type": "string"
     }
   }
 }

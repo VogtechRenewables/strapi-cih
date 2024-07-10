@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "home"
+    "displayName": "home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,45 @@
     },
     "heroBig": {
       "type": "text"
+    },
+    "learnMoreButton": {
+      "type": "string"
+    },
+    "resourcesSectionTitle": {
+      "type": "string"
+    },
+    "resourcesSectionDesc": {
+      "type": "text"
+    },
+    "resourceBlockTitle1": {
+      "type": "string"
+    },
+    "resourceBlockDesc1": {
+      "type": "text"
+    },
+    "resourceBlockTitle2": {
+      "type": "string"
+    },
+    "resourceBlockDesc2": {
+      "type": "text"
+    },
+    "resourceBlockTitle3": {
+      "type": "string"
+    },
+    "resourceBlockDesc3": {
+      "type": "text"
+    },
+    "resourceBlockTitle4": {
+      "type": "string"
+    },
+    "resourceBlockDesc4": {
+      "type": "text"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "register": {
+      "type": "string"
     }
   }
 }

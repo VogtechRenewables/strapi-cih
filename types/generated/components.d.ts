@@ -12,10 +12,24 @@ export interface CardInfoCardInfo extends Schema.Component {
   };
 }
 
+export interface ResourceGroupResourceGroup extends Schema.Component {
+  collectionName: 'components_resource_group_resource_groups';
+  info: {
+    displayName: 'ResourceGroup';
+    icon: 'cloud';
+    description: '';
+  };
+  attributes: {
+    resourceLink: Attribute.Text;
+    resourceName: Attribute.Text;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'card-info.card-info': CardInfoCardInfo;
+      'resource-group.resource-group': ResourceGroupResourceGroup;
     }
   }
 }
