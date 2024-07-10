@@ -1073,12 +1073,41 @@ export interface ApiFooterFrenchFooterFrench extends Schema.SingleType {
     singularName: 'footer-french';
     pluralName: 'footer-frenches';
     displayName: 'footer-french';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    formTitle: Attribute.String;
+    footerTitle: Attribute.String;
+    footerDescription: Attribute.Text;
+    navigation1: Attribute.String;
+    navigation2: Attribute.String;
+    navigation3: Attribute.String;
+    navigation4: Attribute.String;
+    navigation5: Attribute.String;
+    aboutUs1: Attribute.String;
+    aboutUs2: Attribute.String;
+    aboutUs3: Attribute.String;
+    aboutUs4: Attribute.String;
+    aboutUs5: Attribute.String;
+    programs1: Attribute.String;
+    programs2: Attribute.String;
+    programs3: Attribute.String;
+    programs4: Attribute.String;
+    resources1: Attribute.String;
+    resources2: Attribute.String;
+    resources3: Attribute.String;
+    resources4: Attribute.String;
+    resources5: Attribute.String;
+    contact1: Attribute.String;
+    email: Attribute.Text;
+    phone: Attribute.Text;
+    navigation: Attribute.String;
+    aboutUs: Attribute.String;
+    programs: Attribute.String;
+    resources: Attribute.String;
+    contact: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1199,7 +1228,6 @@ export interface ApiHomeHome extends Schema.SingleType {
     resourceBlockTitle4: Attribute.String;
     resourceBlockDesc4: Attribute.Text;
     contact: Attribute.String;
-    register: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1234,7 +1262,8 @@ export interface ApiHomeFrenchHomeFrench extends Schema.SingleType {
     resourceBlockTitle4: Attribute.String;
     resourceBlockDesc4: Attribute.Text;
     contact: Attribute.String;
-    register: Attribute.String;
+    resourcesSectionTitle: Attribute.String;
+    resourcesSectionDesc: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1259,6 +1288,7 @@ export interface ApiPageNotFoundPageNotFound extends Schema.SingleType {
     singularName: 'page-not-found';
     pluralName: 'page-not-founds';
     displayName: 'page not found';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1266,7 +1296,6 @@ export interface ApiPageNotFoundPageNotFound extends Schema.SingleType {
   attributes: {
     error: Attribute.Text;
     textOne: Attribute.Text;
-    textTwo: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1292,6 +1321,7 @@ export interface ApiPageNotFoundFrenchPageNotFoundFrench
     singularName: 'page-not-found-french';
     pluralName: 'page-not-found-frenches';
     displayName: 'page not found-french';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1299,7 +1329,6 @@ export interface ApiPageNotFoundFrenchPageNotFoundFrench
   attributes: {
     error: Attribute.Text;
     textOne: Attribute.Text;
-    textTwo: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1396,6 +1425,10 @@ export interface ApiResourceResource extends Schema.SingleType {
   attributes: {
     formTitle: Attribute.String;
     ResourceInfo: Attribute.Component<'resource-group.resource-group', true>;
+    group1: Attribute.String;
+    group2: Attribute.String;
+    group3: Attribute.String;
+    group4: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

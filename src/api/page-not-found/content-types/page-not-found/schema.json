@@ -4,7 +4,8 @@
   "info": {
     "singularName": "page-not-found",
     "pluralName": "page-not-founds",
-    "displayName": "page not found"
+    "displayName": "page not found",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,9 +16,6 @@
       "type": "text"
     },
     "textOne": {
-      "type": "text"
-    },
-    "textTwo": {
       "type": "text"
     }
   }

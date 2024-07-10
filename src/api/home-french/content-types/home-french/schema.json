@@ -48,8 +48,11 @@
     "contact": {
       "type": "string"
     },
-    "register": {
+    "resourcesSectionTitle": {
       "type": "string"
+    },
+    "resourcesSectionDesc": {
+      "type": "text"
     }
   }
 }

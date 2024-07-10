@@ -4,7 +4,8 @@
   "info": {
     "singularName": "page-not-found-french",
     "pluralName": "page-not-found-frenches",
-    "displayName": "page not found-french"
+    "displayName": "page not found-french",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,9 +16,6 @@
       "type": "text"
     },
     "textOne": {
-      "type": "text"
-    },
-    "textTwo": {
       "type": "text"
     }
   }
