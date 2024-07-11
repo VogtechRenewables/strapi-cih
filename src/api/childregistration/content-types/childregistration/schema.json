@@ -4,7 +4,8 @@
   "info": {
     "singularName": "childregistration",
     "pluralName": "childregistrations",
-    "displayName": "childregistration"
+    "displayName": "childregistration",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,135 @@
     },
     "formDescription": {
       "type": "text"
+    },
+    "infoTitle1": {
+      "type": "string"
+    },
+    "infoData1": {
+      "type": "string"
+    },
+    "infoTitle2": {
+      "type": "string"
+    },
+    "infoData2": {
+      "type": "string"
+    },
+    "infoTitle3": {
+      "type": "string"
+    },
+    "infoData3": {
+      "type": "string"
+    },
+    "infoTitle4": {
+      "type": "string"
+    },
+    "infoData4": {
+      "type": "string"
+    },
+    "pricingTitle": {
+      "type": "string"
+    },
+    "pricingDescription": {
+      "type": "text"
+    },
+    "regularPriceTitle": {
+      "type": "string"
+    },
+    "regularPriceData": {
+      "type": "string"
+    },
+    "bundlePriceTitle": {
+      "type": "string"
+    },
+    "bundlePriceData": {
+      "type": "string"
+    },
+    "infoBox1": {
+      "type": "text"
+    },
+    "childFormTitle": {
+      "type": "string"
+    },
+    "childName": {
+      "type": "string"
+    },
+    "childAge": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "male": {
+      "type": "string"
+    },
+    "female": {
+      "type": "string"
+    },
+    "childParentName": {
+      "type": "string"
+    },
+    "childEmail": {
+      "type": "string"
+    },
+    "childPhone": {
+      "type": "string"
+    },
+    "chooseWeeksTitle": {
+      "type": "string"
+    },
+    "childEmergencyContactName": {
+      "type": "string"
+    },
+    "childEmergencyContactNumber": {
+      "type": "string"
+    },
+    "sectionTitle": {
+      "type": "string"
+    },
+    "infoBoxTitle2": {
+      "type": "string"
+    },
+    "infoBoxData2": {
+      "type": "text"
+    },
+    "checkbox1": {
+      "type": "text"
+    },
+    "checkboxError": {
+      "type": "text"
+    },
+    "infoBoxTitle3": {
+      "type": "string"
+    },
+    "infoBoxData3": {
+      "type": "text"
+    },
+    "checkbox2": {
+      "type": "text"
+    },
+    "digitalSig": {
+      "type": "string"
+    },
+    "sectionTitle2": {
+      "type": "string"
+    },
+    "method1": {
+      "type": "string"
+    },
+    "method2": {
+      "type": "string"
+    },
+    "checkboxError2": {
+      "type": "text"
+    },
+    "enrollButton": {
+      "type": "string"
+    },
+    "infoTitle5": {
+      "type": "string"
+    },
+    "infoData5": {
+      "type": "string"
     }
   }
 }

@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "sign_ins",
+  "collectionName": "sign_in_frenches",
   "info": {
-    "singularName": "sign-in",
-    "pluralName": "sign-ins",
-    "displayName": "sign-in",
-    "description": ""
+    "singularName": "sign-in-french",
+    "pluralName": "sign-in-frenches",
+    "displayName": "sign-in-french"
   },
   "options": {
     "draftAndPublish": true

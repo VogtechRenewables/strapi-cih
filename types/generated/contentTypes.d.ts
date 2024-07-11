@@ -881,6 +881,7 @@ export interface ApiChildregistrationChildregistration
     singularName: 'childregistration';
     pluralName: 'childregistrations';
     displayName: 'childregistration';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -888,6 +889,49 @@ export interface ApiChildregistrationChildregistration
   attributes: {
     formTitle: Attribute.String;
     formDescription: Attribute.Text;
+    infoTitle1: Attribute.String;
+    infoData1: Attribute.String;
+    infoTitle2: Attribute.String;
+    infoData2: Attribute.String;
+    infoTitle3: Attribute.String;
+    infoData3: Attribute.String;
+    infoTitle4: Attribute.String;
+    infoData4: Attribute.String;
+    pricingTitle: Attribute.String;
+    pricingDescription: Attribute.Text;
+    regularPriceTitle: Attribute.String;
+    regularPriceData: Attribute.String;
+    bundlePriceTitle: Attribute.String;
+    bundlePriceData: Attribute.String;
+    infoBox1: Attribute.Text;
+    childFormTitle: Attribute.String;
+    childName: Attribute.String;
+    childAge: Attribute.String;
+    gender: Attribute.String;
+    male: Attribute.String;
+    female: Attribute.String;
+    childParentName: Attribute.String;
+    childEmail: Attribute.String;
+    childPhone: Attribute.String;
+    chooseWeeksTitle: Attribute.String;
+    childEmergencyContactName: Attribute.String;
+    childEmergencyContactNumber: Attribute.String;
+    sectionTitle: Attribute.String;
+    infoBoxTitle2: Attribute.String;
+    infoBoxData2: Attribute.Text;
+    checkbox1: Attribute.Text;
+    checkboxError: Attribute.Text;
+    infoBoxTitle3: Attribute.String;
+    infoBoxData3: Attribute.Text;
+    checkbox2: Attribute.Text;
+    digitalSig: Attribute.String;
+    sectionTitle2: Attribute.String;
+    method1: Attribute.String;
+    method2: Attribute.String;
+    checkboxError2: Attribute.Text;
+    enrollButton: Attribute.String;
+    infoTitle5: Attribute.String;
+    infoData5: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -913,6 +957,7 @@ export interface ApiChildregistrationFrenchChildregistrationFrench
     singularName: 'childregistration-french';
     pluralName: 'childregistration-frenches';
     displayName: 'childregistration-french';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -920,6 +965,49 @@ export interface ApiChildregistrationFrenchChildregistrationFrench
   attributes: {
     formTitle: Attribute.String;
     formDescription: Attribute.Text;
+    infoTitle1: Attribute.String;
+    infoData1: Attribute.String;
+    infoTitle2: Attribute.String;
+    infoData2: Attribute.String;
+    infoTitle3: Attribute.String;
+    infoData3: Attribute.String;
+    infoTitle4: Attribute.String;
+    infoData4: Attribute.String;
+    infoTitle5: Attribute.String;
+    infoData5: Attribute.String;
+    pricingTitle: Attribute.String;
+    pricingDescription: Attribute.Text;
+    regularPriceTitle: Attribute.String;
+    regularPriceData: Attribute.String;
+    bundlePriceTitle: Attribute.String;
+    bundlePriceData: Attribute.String;
+    infoBox1: Attribute.Text;
+    childFormTitle: Attribute.String;
+    childName: Attribute.String;
+    childAge: Attribute.String;
+    gender: Attribute.String;
+    male: Attribute.String;
+    female: Attribute.String;
+    childParentName: Attribute.String;
+    childEmail: Attribute.String;
+    childPhone: Attribute.String;
+    chooseWeeksTitle: Attribute.String;
+    childEmergencyContactName: Attribute.String;
+    childEmergencyContactNumber: Attribute.String;
+    sectionTitle: Attribute.String;
+    infoBoxTitle2: Attribute.String;
+    infoBoxData2: Attribute.Text;
+    checkbox1: Attribute.String;
+    checkboxError: Attribute.String;
+    infoBoxTitle3: Attribute.String;
+    infoBoxData3: Attribute.Text;
+    checkbox2: Attribute.String;
+    digitalSig: Attribute.String;
+    sectionTitle2: Attribute.String;
+    method1: Attribute.String;
+    method2: Attribute.String;
+    checkboxError2: Attribute.String;
+    enrollButton: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1489,12 +1577,18 @@ export interface ApiSignInSignIn extends Schema.SingleType {
     singularName: 'sign-in';
     pluralName: 'sign-ins';
     displayName: 'sign-in';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     formTitle: Attribute.String;
+    emailPlaceholder: Attribute.String;
+    passwordPlaceholder: Attribute.String;
+    buttonTitle: Attribute.String;
+    signUpText: Attribute.String;
+    signUp: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1506,6 +1600,117 @@ export interface ApiSignInSignIn extends Schema.SingleType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::sign-in.sign-in',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSignInFrenchSignInFrench extends Schema.SingleType {
+  collectionName: 'sign_in_frenches';
+  info: {
+    singularName: 'sign-in-french';
+    pluralName: 'sign-in-frenches';
+    displayName: 'sign-in-french';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    formTitle: Attribute.String;
+    emailPlaceholder: Attribute.String;
+    passwordPlaceholder: Attribute.String;
+    buttonTitle: Attribute.String;
+    signUpText: Attribute.String;
+    signUp: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::sign-in-french.sign-in-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::sign-in-french.sign-in-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSignUpSignUp extends Schema.SingleType {
+  collectionName: 'sign_ups';
+  info: {
+    singularName: 'sign-up';
+    pluralName: 'sign-ups';
+    displayName: 'sign-up';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    formTitle: Attribute.String;
+    firstNamePlaceholder: Attribute.String;
+    lastNamePlaceHolder: Attribute.String;
+    phonePlaceholder: Attribute.String;
+    emailPlaceholder: Attribute.String;
+    passwordPlaceholder: Attribute.String;
+    submitButton: Attribute.String;
+    cancelButton: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::sign-up.sign-up',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::sign-up.sign-up',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSignUpFrenchSignUpFrench extends Schema.SingleType {
+  collectionName: 'sign_up_frenches';
+  info: {
+    singularName: 'sign-up-french';
+    pluralName: 'sign-up-frenches';
+    displayName: 'sign-up-french';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    formTitle: Attribute.String;
+    firstNamePlaceholder: Attribute.String;
+    lastNamePlaceHolder: Attribute.String;
+    emailPlaceholder: Attribute.String;
+    phonePlaceholder: Attribute.String;
+    passwordPlaceholder: Attribute.String;
+    submitButton: Attribute.String;
+    cancelButton: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::sign-up-french.sign-up-french',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::sign-up-french.sign-up-french',
       'oneToOne',
       'admin::user'
     > &
@@ -1638,6 +1843,7 @@ export interface ApiSummercampFrenchSummercampFrench extends Schema.SingleType {
     singularName: 'summercamp-french';
     pluralName: 'summercamp-frenches';
     displayName: 'summercamp-french';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1645,6 +1851,23 @@ export interface ApiSummercampFrenchSummercampFrench extends Schema.SingleType {
   attributes: {
     headerTitle: Attribute.String;
     headerAge: Attribute.String;
+    headerTitle2: Attribute.String;
+    headerSubTitle: Attribute.String;
+    registrationHeader: Attribute.String;
+    registrationHeaderDate: Attribute.String;
+    registerButton1: Attribute.String;
+    dateAndTimesTitle: Attribute.String;
+    Sessions: Attribute.Component<'sessions.sessions', true>;
+    paragraphTitle1: Attribute.String;
+    paragraphText1: Attribute.Text;
+    paragraphTitle2: Attribute.String;
+    paragraphText2: Attribute.Text;
+    paragraphTitle3: Attribute.String;
+    paragraphText3: Attribute.Text;
+    paragraphTitle4: Attribute.String;
+    paragraphText4: Attribute.Text;
+    buttonTitle: Attribute.String;
+    registerButton2: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1700,6 +1923,9 @@ declare module '@strapi/types' {
       'api::resource.resource': ApiResourceResource;
       'api::resource-french.resource-french': ApiResourceFrenchResourceFrench;
       'api::sign-in.sign-in': ApiSignInSignIn;
+      'api::sign-in-french.sign-in-french': ApiSignInFrenchSignInFrench;
+      'api::sign-up.sign-up': ApiSignUpSignUp;
+      'api::sign-up-french.sign-up-french': ApiSignUpFrenchSignUpFrench;
       'api::success.success': ApiSuccessSuccess;
       'api::success-french.success-french': ApiSuccessFrenchSuccessFrench;
       'api::summercamp.summercamp': ApiSummercampSummercamp;
