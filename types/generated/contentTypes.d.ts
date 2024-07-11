@@ -855,7 +855,7 @@ export interface ApiAboutFrenchAboutFrench extends Schema.SingleType {
     valuesContent: Attribute.Text;
     additionalTitle: Attribute.String;
     additionalContent: Attribute.Text;
-    back: Attribute.String;
+    button: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1810,15 +1810,15 @@ export interface ApiSummercampSummercamp extends Schema.SingleType {
     dateAndTimesTitle: Attribute.String;
     Sessions: Attribute.Component<'sessions.sessions', true>;
     paragraphTitle1: Attribute.Text;
-    paragraphText1: Attribute.Text;
     paragraphTitle2: Attribute.Text;
-    paragraphText2: Attribute.Text;
     paragraphTitle3: Attribute.Text;
-    paragraphText3: Attribute.Text;
     paragraphTitle4: Attribute.Text;
-    paragraphText4: Attribute.Text;
     buttonTitle: Attribute.String;
     registerButton2: Attribute.String;
+    paragraphText1: Attribute.Blocks;
+    paragraphText2: Attribute.Blocks;
+    paragraphText3: Attribute.Blocks;
+    paragraphText4: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

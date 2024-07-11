@@ -45,25 +45,13 @@
     "paragraphTitle1": {
       "type": "text"
     },
-    "paragraphText1": {
-      "type": "text"
-    },
     "paragraphTitle2": {
-      "type": "text"
-    },
-    "paragraphText2": {
       "type": "text"
     },
     "paragraphTitle3": {
       "type": "text"
     },
-    "paragraphText3": {
-      "type": "text"
-    },
     "paragraphTitle4": {
-      "type": "text"
-    },
-    "paragraphText4": {
       "type": "text"
     },
     "buttonTitle": {
@@ -71,6 +59,18 @@
     },
     "registerButton2": {
       "type": "string"
+    },
+    "paragraphText1": {
+      "type": "blocks"
+    },
+    "paragraphText2": {
+      "type": "blocks"
+    },
+    "paragraphText3": {
+      "type": "blocks"
+    },
+    "paragraphText4": {
+      "type": "blocks"
     }
   }
 }
