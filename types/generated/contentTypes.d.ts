@@ -1734,7 +1734,7 @@ export interface ApiSuccessSuccess extends Schema.SingleType {
     successMessageText: Attribute.Text;
     successMessageText2: Attribute.Text;
     greenBoxTitle: Attribute.String;
-    greenBoxContent: Attribute.Text;
+    greenBoxContent: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1769,7 +1769,7 @@ export interface ApiSuccessFrenchSuccessFrench extends Schema.SingleType {
     successMessageText: Attribute.Text;
     successMessageText2: Attribute.Text;
     greenBoxTitle: Attribute.String;
-    greenBoxContent: Attribute.Text;
+    greenBoxContent: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1859,15 +1859,15 @@ export interface ApiSummercampFrenchSummercampFrench extends Schema.SingleType {
     dateAndTimesTitle: Attribute.String;
     Sessions: Attribute.Component<'sessions.sessions', true>;
     paragraphTitle1: Attribute.String;
-    paragraphText1: Attribute.Text;
     paragraphTitle2: Attribute.String;
-    paragraphText2: Attribute.Text;
     paragraphTitle3: Attribute.String;
-    paragraphText3: Attribute.Text;
     paragraphTitle4: Attribute.String;
-    paragraphText4: Attribute.Text;
     buttonTitle: Attribute.String;
     registerButton2: Attribute.String;
+    paragraphText1: Attribute.Blocks;
+    paragraphText2: Attribute.Blocks;
+    paragraphText3: Attribute.Blocks;
+    paragraphText4: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

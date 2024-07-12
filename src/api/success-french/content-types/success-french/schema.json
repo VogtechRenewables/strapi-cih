@@ -25,7 +25,7 @@
       "type": "string"
     },
     "greenBoxContent": {
-      "type": "text"
+      "type": "blocks"
     }
   }
 }
